@@ -22,9 +22,6 @@ def main():
     file_selector = FileSelector(root)
     file_selector.show_select_file()
 
-
-
-
     image_path = file_selector.image_path or base_image_path
     json_path = file_selector.json_path or base_json_path
 
