@@ -17,7 +17,11 @@ Small Python app designed to edit maps in the style of Paradox and other grand s
 * "regions.json"
 
 ## How to build
-Install and run main.exe, or build with any python builder, I used PyInstaller
+Download from releases and run main.exe, or build with any python builder, I used PyInstaller.
+
+[Releases][link]
+
+[link]: https://github.com/CubickT/mapEditor/releases
 
 ## Support
 This project was created to cater to my own needs and is unlikely to expand further (with the exception of fixing bugs), so feel free to create forks or PRs. Also, if this gains some traction, I may consider adding extra functionality
