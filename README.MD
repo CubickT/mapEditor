@@ -9,7 +9,7 @@ Small Python app designed to edit maps in the style of Paradox and other grand s
 * App will automatically scan your PNG file for unique regions and will fill the json with all the regions
 * Start editing!
 * * Change names
-* * Add/Edit custom properties (TODO)
+* * Add/Edit custom properties
 * * Change color (TODO)
 
 ### Standard file names:
