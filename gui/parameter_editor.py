@@ -26,7 +26,7 @@ class ParameterEditor(ttk.Frame):
 
         self.add_param_btn = ttk.Button(self, text="Добавить парам.", command= self._add_param).grid(row=3, column=0, columnspan=1, pady=10)
         self.param_name = tk.StringVar(master= parent, value="")
-        self.param_name_entry = ttk.Entry(self, textvariable=self.param_name, width= 25 ).grid(row=2, column= 1, pady=10)
+        self.param_name_entry = ttk.Entry(self, textvariable=self.param_name, width= 25 ).grid(row=3, column= 1, pady=10)
 
         self.params_frame = ttk.LabelFrame(self, text="Параметры (params)", padding=5)
         self.params_frame.grid(row=4, column=0, columnspan=2, sticky=tk.W+tk.E, pady=10)
