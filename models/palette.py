@@ -10,9 +10,9 @@ class Palette:
                 return r
         return None
     
-    def find_by_id(self, id):
+    def find_by_id(self, region_id):
         for r in self.regions:
-            if r.id.upper() == id.upper():
+            if r.id.upper() == region_id.upper():
                 return r
         return None
 

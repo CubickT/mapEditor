@@ -20,7 +20,7 @@ class PaletteLoader:
         with open(filepath, 'w', encoding='utf-8') as f:
             try:
                 json.dump(palette.to_jsonable(), f, indent=2, ensure_ascii=False)
-            except Exception as e:
+            except (TypeError, OSError) as e:
                 print(f"Ошибка сериализации: {e}")
 
     @staticmethod
@@ -34,8 +34,8 @@ class PaletteLoader:
         for idx, (r,g,b) in enumerate(sorted_rgb):
             hex_color = f"#{r:02x}{g:02x}{b:02x}".upper()
             name = idx
-            id = idx
-            region  = Region(id, name, hex_color, params={})
+            region_id = idx
+            region  = Region(region_id, name, hex_color, params={})
             regions.append(region)
             
         palette =  Palette(regions)

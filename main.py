@@ -1,5 +1,5 @@
 import tkinter as tk
-from tkinter import filedialog, messagebox
+from tkinter import messagebox
 from gui.main_window import MainWindow
 from services.file_selector import FileSelector
 
@@ -12,8 +12,8 @@ def main():
     base_json_path = "regions.json"
 
     try:
-        open(base_image_path)
-    except:
+        open(base_image_path) # pylint: disable=unspecified-encoding
+    except (TypeError, OSError):
         messagebox.showwarning(title="Файлы по умолчанию",
                             message="Отустсвуют файлы по умолчанию -" \
                             "\"mapMask.png\" и \"regions.json\" должны быть в той же папке, что и main.exe." \
@@ -29,7 +29,7 @@ def main():
 
     root.deiconify()
     
-    app = MainWindow(root, image_path, json_path)
+    MainWindow(root, image_path, json_path)
     root.mainloop()
 
 if __name__ == "__main__":

@@ -4,7 +4,7 @@ from tkinter import ttk
 from models.region import Region
 
 class ParameterEditor(ttk.Frame):
-    def __init__(self, parent, palette,):
+    def __init__(self, parent):
         super().__init__(parent)
 
         self.region_selected: Region = None
@@ -24,9 +24,9 @@ class ParameterEditor(ttk.Frame):
         self.id_var = tk.StringVar(master = parent, value= "")
         ttk.Label(self, textvariable=self.id_var).grid(row=2, column=1, sticky=tk.W)
 
-        self.add_param_btn = ttk.Button(self, text="Добавить парам.", command= self._add_param).grid(row=3, column=0, columnspan=1, pady=10)
+        ttk.Button(self, text="Добавить парам.", command= self._add_param).grid(row=3, column=0, columnspan=1, pady=10)
         self.param_name = tk.StringVar(master= parent, value="")
-        self.param_name_entry = ttk.Entry(self, textvariable=self.param_name, width= 25 ).grid(row=3, column= 1, pady=10)
+        ttk.Entry(self, textvariable=self.param_name, width= 25 ).grid(row=3, column= 1, pady=10)
 
         self.params_frame = ttk.LabelFrame(self, text="Параметры (params)", padding=5)
         self.params_frame.grid(row=4, column=0, columnspan=2, sticky=tk.W+tk.E, pady=10)
@@ -49,8 +49,8 @@ class ParameterEditor(ttk.Frame):
             else:
                 self.param_vars[key].set(value)
 
-            param_label = ttk.Label(self.params_container, text= key + ":").grid(row=idx,column=0,pady=10)
-            param_entry = ttk.Entry(self.params_container, textvariable=self.param_vars[key], width= 25).grid(row=idx, column= 1,pady=10)
+            ttk.Label(self.params_container, text= key + ":").grid(row=idx,column=0,pady=10)
+            ttk.Entry(self.params_container, textvariable=self.param_vars[key], width= 25).grid(row=idx, column= 1,pady=10)
 
             param_delete = ttk.Button(self.params_container, text="Удалить", command= lambda k = key: self._delete_param(k))
 

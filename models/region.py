@@ -3,8 +3,8 @@ from PIL import ImageColor
 class Region:
     neighbors = []
 
-    def __init__(self, id, name, hex_color, params=None):
-        self.id = id
+    def __init__(self, region_id, name, hex_color, params=None):
+        self.id = region_id
         self.name = name
         self.hex_color = hex_color  # hex-строка\
         self.rgb_color = ImageColor.getcolor(hex_color, "RGB")

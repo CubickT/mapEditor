@@ -10,8 +10,9 @@ class FileSelector:
         self.image_path = None 
         self.json_path = None
 
-    def show_select_file(self):
         self.top = tk.Toplevel(self.master)
+
+    def show_select_file(self):
         self.top.title("Select Files")
         self.top.geometry("200x200")
         self.top.resizable(False, False)
@@ -29,8 +30,6 @@ class FileSelector:
         btn_ok.pack(pady=10)
 
         self.master.wait_window(self.top)
-
-
 
     def pick_image_path(self):
         path = filedialog.askopenfilename(filetypes=[("PNG files", "*.png")])

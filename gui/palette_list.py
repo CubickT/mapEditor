@@ -22,7 +22,7 @@ class PaletteList(ttk.Frame):
         self.listbox.config(yscrollcommand=scrollbar.set)
 
         self.listbox.bind('<<ListboxSelect>>', self._on_select)
-        self._refresh_list()
+        self.refresh_list()
 
     def select_region(self, region):
         self.listbox.selection_clear(0, tk.END)
@@ -32,7 +32,7 @@ class PaletteList(ttk.Frame):
                 self.listbox.selection_set(i)
                 self.listbox.see(i)
 
-    def _refresh_list(self):
+    def refresh_list(self):
         self.listbox.delete(0, tk.END)
         for region in self.palette.regions:
             display = f"{region.name}"
@@ -41,7 +41,7 @@ class PaletteList(ttk.Frame):
         if self.palette.regions:
             self.listbox.selection_set(0)
 
-    def _on_select(self, event):
+    def _on_select(self):
         selection = self.listbox.curselection()
         if not selection:
             return

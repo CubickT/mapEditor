@@ -10,12 +10,10 @@ from models.palette import Palette
 
 def extract_unique_colors(image_path):
     with Image.open(image_path) as img:
-        width, height = img.size
         img.load()
         img = img.convert('RGB')
         pixels = list(img.get_flattened_data())
-        uniqueColors = set(pixels)
-        return uniqueColors
+        return set(pixels)
 
 def rgb_to_hex(color):
     r,g,b = color
@@ -44,7 +42,7 @@ def get_neighbors(image: Image, palette: Palette):
     print("вызов get_neighbors")
 
     dirs = [(2,0), (0,2),(0,-2),(-2,0)]
-    skipColors = {(0,0,0), (255,255,255), (113,115,126)}
+    skip_colors = {(0,0,0), (255,255,255), (113,115,126)}
 
     neighbors_map = defaultdict(set)
 
@@ -55,20 +53,20 @@ def get_neighbors(image: Image, palette: Palette):
         for y in range(height):
             color = pixels[x,y]
 
-            if color in skipColors:
+            if color in skip_colors:
                 continue
         
             for dx, dy in dirs:
                 nx, ny = x + dx, y + dy
                 if 0 <= nx < width and 0 <= ny < height:
-                    nColor = pixels[nx, ny]
+                    n_color = pixels[nx, ny]
 
-                    if nColor in skipColors:
+                    if n_color in skip_colors:
                         continue
-                    if nColor != color:
-                        neighbors_map[color].add(nColor)
+                    if n_color != color:
+                        neighbors_map[color].add(n_color)
     
     for color, neighbor_colors in neighbors_map.items():
-        regionColor = rgb_to_hex(color)
-        region: Region = palette.find_by_color(regionColor)
+        region_color = rgb_to_hex(color)
+        region: Region = palette.find_by_color(region_color)
         region.neighbors = [palette.find_by_color(rgb_to_hex(c)).name for c in neighbor_colors]

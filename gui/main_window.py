@@ -1,16 +1,14 @@
-from models.palette import Palette
-from services.palette_loader import PaletteLoader
-from models.region import Region
-
 import tkinter as tk
 from tkinter import ttk
+import json
+
+from models.palette import Palette
+from models.region import Region
+from services.palette_loader import PaletteLoader
 
 from gui.canvas_view import CanvasView
 from gui.palette_list import PaletteList
 from gui.parameter_editor import ParameterEditor
-
-import json
-
 
 class MainWindow:
     def __init__(self, root, image_path, json_path):
@@ -67,7 +65,7 @@ class MainWindow:
     def init_param_editor(self):
         self.right_frame = ttk.Frame(self.main_panel, width=200)
         self.main_panel.add(self.right_frame, weight=1)
-        self.param_editor = ParameterEditor(self.right_frame,self.palette)
+        self.param_editor = ParameterEditor(self.right_frame)
         self.param_editor.pack(side=tk.RIGHT, fill=tk.BOTH, expand=True)
 
         self.param_editor.set_save_callback(self._on_region_save)
@@ -84,7 +82,7 @@ class MainWindow:
         self.param_editor.set_region(region)
 
     def _on_region_save(self):
-        self.palette_list._refresh_list()
+        self.palette_list.refresh_list()
 
     def load_palette(self):
         loader = PaletteLoader()
