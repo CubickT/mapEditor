@@ -1,7 +1,9 @@
-import json, os
+import json
+from PIL import Image
 from models.palette import Palette
-from services.image_parser import extract_unique_colors, closest_color_name
 from models.region import Region
+from services.image_parser import extract_unique_colors, get_neighbors
+
 
 
 
@@ -37,4 +39,8 @@ class PaletteLoader:
             regions.append(region)
             
         palette =  Palette(regions)
+
+        image = Image.open(image_path).convert("RGB")
+        get_neighbors(image, palette)
+        
         return palette

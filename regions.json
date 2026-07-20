@@ -3,504 +3,1089 @@
     "id": 0,
     "name": 0,
     "color": "#000000",
+    "neighbors": [],
     "params": {}
   },
   {
     "id": 1,
     "name": 1,
     "color": "#1E390B",
+    "neighbors": [
+      78,
+      76,
+      77,
+      2,
+      3
+    ],
     "params": {}
   },
   {
     "id": 2,
     "name": 2,
     "color": "#243915",
+    "neighbors": [
+      1,
+      3
+    ],
     "params": {}
   },
   {
     "id": 3,
     "name": 3,
     "color": "#315C13",
+    "neighbors": [
+      78,
+      7,
+      1,
+      80,
+      2,
+      79
+    ],
     "params": {}
   },
   {
     "id": 4,
     "name": 4,
     "color": "#384F28",
+    "neighbors": [
+      44,
+      74,
+      70,
+      9,
+      49
+    ],
     "params": {}
   },
   {
     "id": 5,
     "name": 5,
     "color": "#3E1130",
+    "neighbors": [
+      41,
+      32,
+      22,
+      19,
+      17
+    ],
     "params": {}
   },
   {
     "id": 6,
     "name": 6,
     "color": "#420B31",
+    "neighbors": [
+      14,
+      20,
+      33,
+      55,
+      8
+    ],
     "params": {}
   },
   {
     "id": 7,
     "name": 7,
     "color": "#457226",
+    "neighbors": [
+      82,
+      19,
+      80,
+      3,
+      23
+    ],
     "params": {}
   },
   {
     "id": 8,
     "name": 8,
     "color": "#4F183E",
+    "neighbors": [
+      31,
+      25,
+      6,
+      33,
+      55,
+      13
+    ],
     "params": {}
   },
   {
     "id": 9,
     "name": 9,
     "color": "#526A42",
+    "neighbors": [
+      4,
+      74,
+      76
+    ],
     "params": {}
   },
   {
     "id": 10,
     "name": 10,
     "color": "#53614A",
+    "neighbors": [
+      22
+    ],
     "params": {}
   },
   {
     "id": 11,
     "name": 11,
     "color": "#597B42",
+    "neighbors": [
+      23
+    ],
     "params": {}
   },
   {
     "id": 12,
     "name": 12,
     "color": "#59BD14",
+    "neighbors": [
+      16,
+      15
+    ],
     "params": {}
   },
   {
     "id": 13,
     "name": 13,
     "color": "#5C254B",
+    "neighbors": [
+      31,
+      22,
+      33,
+      17,
+      8
+    ],
     "params": {}
   },
   {
     "id": 14,
     "name": 14,
     "color": "#613352",
+    "neighbors": [
+      57,
+      20,
+      66,
+      65,
+      6,
+      55
+    ],
     "params": {}
   },
   {
     "id": 15,
     "name": 15,
     "color": "#62E00A",
+    "neighbors": [
+      35,
+      16,
+      24,
+      12
+    ],
     "params": {}
   },
   {
     "id": 16,
-    "name": "test",
+    "name": 16,
     "color": "#67ED0B",
+    "neighbors": [
+      12,
+      26,
+      35,
+      21,
+      15
+    ],
     "params": {}
   },
   {
     "id": 17,
     "name": 17,
     "color": "#6A4C60",
+    "neighbors": [
+      32,
+      5,
+      22,
+      33,
+      13
+    ],
     "params": {}
   },
   {
     "id": 18,
     "name": 18,
     "color": "#71737E",
+    "neighbors": [],
     "params": {}
   },
   {
     "id": 19,
     "name": 19,
     "color": "#718E9E",
+    "neighbors": [
+      41,
+      82,
+      52,
+      7,
+      24,
+      5,
+      58,
+      22,
+      34,
+      63,
+      51,
+      50,
+      23
+    ],
     "params": {}
   },
   {
     "id": 20,
     "name": 20,
     "color": "#724464",
+    "neighbors": [
+      14,
+      32,
+      6,
+      66,
+      33,
+      28
+    ],
     "params": {}
   },
   {
     "id": 21,
     "name": 21,
     "color": "#72ED1C",
+    "neighbors": [
+      26,
+      35,
+      42,
+      16,
+      27
+    ],
     "params": {}
   },
   {
     "id": 22,
     "name": 22,
     "color": "#758868",
+    "neighbors": [
+      10,
+      31,
+      30,
+      13,
+      19,
+      29,
+      17,
+      5,
+      37
+    ],
     "params": {}
   },
   {
     "id": 23,
     "name": 23,
     "color": "#759161",
+    "neighbors": [
+      7,
+      34,
+      48,
+      19,
+      11
+    ],
     "params": {}
   },
   {
     "id": 24,
     "name": 24,
     "color": "#75CF38",
+    "neighbors": [
+      35,
+      34,
+      19,
+      15
+    ],
     "params": {}
   },
   {
     "id": 25,
     "name": 25,
     "color": "#7B3E68",
+    "neighbors": [
+      31,
+      8,
+      40,
+      30,
+      55,
+      43
+    ],
     "params": {}
   },
   {
     "id": 26,
     "name": 26,
     "color": "#80E938",
+    "neighbors": [
+      21,
+      16
+    ],
     "params": {}
   },
   {
     "id": 27,
     "name": 27,
     "color": "#8EE552",
+    "neighbors": [
+      21,
+      42
+    ],
     "params": {}
   },
   {
     "id": 28,
     "name": 28,
     "color": "#958F0D",
+    "neighbors": [
+      32,
+      61,
+      20,
+      66
+    ],
     "params": {}
   },
   {
     "id": 29,
     "name": 29,
     "color": "#9A1971",
+    "neighbors": [
+      22,
+      40,
+      30
+    ],
     "params": {}
   },
   {
     "id": 30,
     "name": 30,
     "color": "#9A2575",
+    "neighbors": [
+      25,
+      40,
+      22,
+      29,
+      43,
+      37
+    ],
     "params": {}
   },
   {
     "id": 31,
     "name": 31,
     "color": "#9A4E82",
+    "neighbors": [
+      25,
+      22,
+      13,
+      43,
+      8,
+      37
+    ],
     "params": {}
   },
   {
     "id": 32,
     "name": 32,
     "color": "#9A941E",
+    "neighbors": [
+      41,
+      60,
+      20,
+      61,
+      28,
+      33,
+      17,
+      5
+    ],
     "params": {}
   },
   {
     "id": 33,
     "name": 33,
     "color": "#9E638C",
+    "neighbors": [
+      20,
+      32,
+      13,
+      6,
+      17,
+      8
+    ],
     "params": {}
   },
   {
     "id": 34,
     "name": 34,
     "color": "#9FB093",
+    "neighbors": [
+      35,
+      24,
+      48,
+      19,
+      23
+    ],
     "params": {}
   },
   {
     "id": 35,
     "name": 35,
     "color": "#A2E574",
+    "neighbors": [
+      42,
+      16,
+      24,
+      21,
+      34,
+      15
+    ],
     "params": {}
   },
   {
     "id": 36,
     "name": 36,
     "color": "#A72F2F",
+    "neighbors": [
+      45,
+      46,
+      67,
+      61,
+      38
+    ],
     "params": {}
   },
   {
     "id": 37,
     "name": 37,
     "color": "#A74889",
+    "neighbors": [
+      22,
+      31,
+      43,
+      30
+    ],
     "params": {}
   },
   {
     "id": 38,
     "name": 38,
     "color": "#A74D4D",
+    "neighbors": [
+      45,
+      36,
+      39,
+      53,
+      61,
+      66
+    ],
     "params": {}
   },
   {
     "id": 39,
     "name": 39,
     "color": "#A75F5F",
+    "neighbors": [
+      45,
+      44,
+      57,
+      53,
+      54,
+      65,
+      38
+    ],
     "params": {}
   },
   {
     "id": 40,
     "name": 40,
     "color": "#AB147C",
+    "neighbors": [
+      25,
+      30,
+      29,
+      49,
+      55
+    ],
     "params": {}
   },
   {
     "id": 41,
     "name": 41,
     "color": "#B0AB49",
+    "neighbors": [
+      60,
+      32,
+      63,
+      19,
+      5
+    ],
     "params": {}
   },
   {
     "id": 42,
     "name": 42,
     "color": "#B0E58C",
+    "neighbors": [
+      35,
+      21,
+      27
+    ],
     "params": {}
   },
   {
     "id": 43,
     "name": 43,
     "color": "#B43B8E",
+    "neighbors": [
+      31,
+      30,
+      25,
+      37
+    ],
     "params": {}
   },
   {
     "id": 44,
     "name": 44,
     "color": "#B48181",
+    "neighbors": [
+      45,
+      74,
+      39,
+      54,
+      70,
+      4
+    ],
     "params": {}
   },
   {
     "id": 45,
     "name": 45,
     "color": "#B99898",
+    "neighbors": [
+      44,
+      46,
+      74,
+      36,
+      72,
+      39,
+      73,
+      38
+    ],
     "params": {}
   },
   {
     "id": 46,
     "name": 46,
     "color": "#B9A5A5",
+    "neighbors": [
+      69,
+      45,
+      36,
+      60,
+      67,
+      52,
+      72,
+      68
+    ],
     "params": {}
   },
   {
     "id": 47,
     "name": 47,
     "color": "#BDE0A4",
+    "neighbors": [
+      48
+    ],
     "params": {}
   },
   {
     "id": 48,
     "name": 48,
     "color": "#C1D7B1",
+    "neighbors": [
+      47,
+      34,
+      23
+    ],
     "params": {}
   },
   {
     "id": 49,
     "name": 49,
     "color": "#C6158E",
+    "neighbors": [
+      4,
+      70,
+      55,
+      40
+    ],
     "params": {}
   },
   {
     "id": 50,
     "name": 50,
     "color": "#D39797",
+    "neighbors": [
+      59,
+      58,
+      19,
+      51
+    ],
     "params": {}
   },
   {
     "id": 51,
     "name": 51,
     "color": "#D3ADAD",
+    "neighbors": [
+      69,
+      52,
+      19,
+      50,
+      59
+    ],
     "params": {}
   },
   {
     "id": 52,
     "name": 52,
     "color": "#D7C4C4",
+    "neighbors": [
+      69,
+      46,
+      60,
+      63,
+      19,
+      51
+    ],
     "params": {}
   },
   {
     "id": 53,
     "name": 53,
     "color": "#DC4FAF",
+    "neighbors": [
+      38,
+      57,
+      39,
+      66
+    ],
     "params": {}
   },
   {
     "id": 54,
     "name": 54,
     "color": "#E01EA3",
+    "neighbors": [
+      65,
+      44,
+      70,
+      39
+    ],
     "params": {}
   },
   {
     "id": 55,
     "name": 55,
     "color": "#E02FA8",
+    "neighbors": [
+      14,
+      70,
+      25,
+      40,
+      49,
+      65,
+      6,
+      8
+    ],
     "params": {}
   },
   {
     "id": 56,
     "name": 56,
     "color": "#E05A5A",
+    "neighbors": [
+      64,
+      58,
+      62,
+      81,
+      59
+    ],
     "params": {}
   },
   {
     "id": 57,
     "name": 57,
     "color": "#E05EB7",
+    "neighbors": [
+      14,
+      39,
+      53,
+      66,
+      65
+    ],
     "params": {}
   },
   {
     "id": 58,
     "name": 58,
     "color": "#E06B6B",
+    "neighbors": [
+      82,
+      56,
+      19,
+      81,
+      50,
+      59
+    ],
     "params": {}
   },
   {
     "id": 59,
     "name": 59,
     "color": "#E08383",
+    "neighbors": [
+      69,
+      64,
+      58,
+      56,
+      51,
+      50
+    ],
     "params": {}
   },
   {
     "id": 60,
     "name": 60,
     "color": "#E0D94D",
+    "neighbors": [
+      41,
+      46,
+      52,
+      67,
+      32,
+      61,
+      63
+    ],
     "params": {}
   },
   {
     "id": 61,
     "name": 61,
     "color": "#E0DB68",
+    "neighbors": [
+      36,
+      60,
+      67,
+      32,
+      66,
+      38,
+      28
+    ],
     "params": {}
   },
   {
     "id": 62,
     "name": 62,
     "color": "#E54444",
+    "neighbors": [
+      64,
+      56,
+      81,
+      80,
+      79
+    ],
     "params": {}
   },
   {
     "id": 63,
     "name": 63,
     "color": "#E5DC30",
+    "neighbors": [
+      60,
+      41,
+      19,
+      52
+    ],
     "params": {}
   },
   {
     "id": 64,
     "name": 64,
     "color": "#ED3232",
+    "neighbors": [
+      59,
+      69,
+      62,
+      68,
+      56,
+      79
+    ],
     "params": {}
   },
   {
     "id": 65,
     "name": 65,
     "color": "#ED43B8",
+    "neighbors": [
+      57,
+      14,
+      39,
+      70,
+      54,
+      55
+    ],
     "params": {}
   },
   {
     "id": 66,
     "name": 66,
     "color": "#ED80CB",
+    "neighbors": [
+      57,
+      14,
+      20,
+      53,
+      61,
+      38,
+      28
+    ],
     "params": {}
   },
   {
     "id": 67,
     "name": 67,
     "color": "#EDE30E",
+    "neighbors": [
+      46,
+      61,
+      36,
+      60
+    ],
     "params": {}
   },
   {
     "id": 68,
     "name": 68,
     "color": "#F20000",
+    "neighbors": [
+      69,
+      46,
+      72,
+      64,
+      71,
+      79
+    ],
     "params": {}
   },
   {
     "id": 69,
     "name": 69,
     "color": "#F20E0E",
+    "neighbors": [
+      46,
+      52,
+      64,
+      68,
+      51,
+      59
+    ],
     "params": {}
   },
   {
     "id": 70,
     "name": 70,
     "color": "#F224B1",
+    "neighbors": [
+      44,
+      54,
+      4,
+      49,
+      65,
+      55
+    ],
     "params": {}
   },
   {
     "id": 71,
     "name": 71,
     "color": "#FF0000",
+    "neighbors": [
+      72,
+      77,
+      73,
+      68,
+      79
+    ],
     "params": {}
   },
   {
     "id": 72,
     "name": 72,
     "color": "#FF0808",
+    "neighbors": [
+      45,
+      46,
+      73,
+      71,
+      68
+    ],
     "params": {}
   },
   {
     "id": 73,
     "name": 73,
     "color": "#FF1B1B",
+    "neighbors": [
+      45,
+      74,
+      72,
+      77,
+      75,
+      71
+    ],
     "params": {}
   },
   {
     "id": 74,
     "name": 74,
     "color": "#FF3535",
+    "neighbors": [
+      45,
+      44,
+      76,
+      73,
+      75,
+      9,
+      4
+    ],
     "params": {}
   },
   {
     "id": 75,
     "name": 75,
     "color": "#FF5858",
+    "neighbors": [
+      77,
+      74,
+      73,
+      76
+    ],
     "params": {}
   },
   {
     "id": 76,
     "name": 76,
     "color": "#FF6B6B",
+    "neighbors": [
+      74,
+      77,
+      75,
+      1,
+      9
+    ],
     "params": {}
   },
   {
     "id": 77,
     "name": 77,
     "color": "#FF8989",
+    "neighbors": [
+      78,
+      76,
+      73,
+      75,
+      71,
+      1,
+      79
+    ],
     "params": {}
   },
   {
     "id": 78,
     "name": 78,
     "color": "#FFA0A0",
+    "neighbors": [
+      77,
+      1,
+      3,
+      79
+    ],
     "params": {}
   },
   {
     "id": 79,
     "name": 79,
     "color": "#FFBABA",
+    "neighbors": [
+      78,
+      64,
+      77,
+      71,
+      62,
+      68,
+      80,
+      3
+    ],
     "params": {}
   },
   {
     "id": 80,
     "name": 80,
     "color": "#FFD1D1",
+    "neighbors": [
+      82,
+      7,
+      62,
+      81,
+      3,
+      79
+    ],
     "params": {}
   },
   {
     "id": 81,
     "name": 81,
     "color": "#FFDDDD",
+    "neighbors": [
+      82,
+      58,
+      62,
+      56,
+      80
+    ],
     "params": {}
   },
   {
     "id": 82,
     "name": 82,
     "color": "#FFF0F0",
+    "neighbors": [
+      7,
+      58,
+      19,
+      81,
+      80
+    ],
     "params": {}
   },
   {
     "id": 83,
     "name": 83,
     "color": "#FFFFFF",
+    "neighbors": [],
     "params": {}
   }
 ]

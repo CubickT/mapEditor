@@ -34,7 +34,8 @@ class MainWindow:
 
         self.refresh_btn = tk.Button(
             control_frame,
-            text="Обновить палитру (распознать цвета)"
+            text="Обновить палитру (распознать цвета)",
+            command= self.load_palette
         )
         self.refresh_btn.pack(side=tk.LEFT, padx=5)
 
