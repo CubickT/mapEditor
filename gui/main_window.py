@@ -33,14 +33,14 @@ class MainWindow:
         self.refresh_btn = tk.Button(
             control_frame,
             text="Обновить палитру (распознать цвета)",
-            command= self.load_palette
+            command= self.reload_palette
         )
         self.refresh_btn.pack(side=tk.LEFT, padx=5)
 
         self.save_json_btn = tk.Button(
             control_frame,
             text= "Сохранить в JSON",
-            command = self.save_pallete
+            command = self.save_palette
         )
         self.save_json_btn.pack(side=tk.LEFT, padx=5)
 
@@ -85,18 +85,17 @@ class MainWindow:
         self.palette_list.refresh_list()
 
     def load_palette(self):
+        print("Загрузка палитры")
         loader = PaletteLoader()
-
         try:
             palette = loader.load_from_json(self.json_path)
             if not palette.regions:
                 raise ValueError("Empty Json")
+            return palette
         except (FileNotFoundError, ValueError, json.JSONDecodeError):
-            palette = loader.generate_from_image(self.image_path) 
-            loader.save_to_json(palette, self.json_path)
-        return palette
+            return self.reload_palette()
     
-    def save_pallete(self):
+    def save_palette(self):
         loader = PaletteLoader()
         if self.palette is None:
             print("Ошибка сохранения, пустая палитра")
@@ -104,3 +103,9 @@ class MainWindow:
         
         loader.save_to_json(self.palette, self.json_path)
         print("Палитра сохраненна в файл")
+
+    def reload_palette(self):
+        loader = PaletteLoader()
+        palette = loader.generate_from_image(self.image_path)
+        loader.save_to_json(self.palette, self.json_path)
+        return palette
