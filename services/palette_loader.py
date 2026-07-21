@@ -1,11 +1,9 @@
 import json
 from PIL import Image
+
 from models.palette import Palette
 from models.region import Region
 from services.image_parser import extract_unique_colors, get_neighbors
-
-
-
 
 class PaletteLoader:
 
